@@ -13,6 +13,7 @@ export const Windows = styled.div`
     border-radius: 1px;
     @media screen and (max-width: 500px) {
       height: 350px;
+      object-fit: contain;
     }
   }
 `
