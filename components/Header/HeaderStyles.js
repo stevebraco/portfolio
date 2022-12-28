@@ -8,6 +8,8 @@ export const HeaderStyles = styled.header`
 
   h1 {
     font-weight: 700;
-    font-size: 28px;
+    @media screen and (max-width: 375px) {
+      font-size: 20px;
+    }
   }
 `

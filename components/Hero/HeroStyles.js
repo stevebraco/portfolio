@@ -38,7 +38,10 @@ export const HeroTitle = styled.h2`
   font-size: 64px;
   font-weight: 600;
   text-align: center;
-
+  @media screen and (max-width: 400px) {
+    font-size: 35px;
+    padding-bottom: 20px;
+  }
   span {
     display: block;
   }
@@ -49,6 +52,9 @@ export const HeroSubTitle = styled.p`
   text-align: center;
   max-width: 800px;
   color: #bbbac4;
+  @media screen and (max-width: 400px) {
+    font-size: 20px;
+  }
 `
 
 export const AnimationText = styled.div`

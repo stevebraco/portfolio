@@ -117,6 +117,7 @@ const Projects = () => {
           handleSelectedButton={handleSelectedButton}
           selectedButton={selectedButton}
         />
+
         <CardList>
           {data
             .filter(({ category }) => {

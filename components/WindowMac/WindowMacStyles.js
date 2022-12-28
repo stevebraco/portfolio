@@ -10,6 +10,10 @@ export const Windows = styled.div`
     object-fit: cover;
     object-position: top;
     width: 100%;
+    border-radius: 1px;
+    @media screen and (max-width: 500px) {
+      height: 350px;
+    }
   }
 `
 
@@ -33,6 +37,13 @@ export const WindowStyles = styled.div`
   box-shadow: rgb(113 116 152 / 27%) 0px 18px 31px,
     rgb(113 116 152 / 7%) 0px 8px 16.2244px,
     rgb(113 116 152 / 5%) 0px 8px 8.46625px;
+  @media screen and (max-width: 720px) {
+    width: 500px;
+  }
+  @media screen and (max-width: 500px) {
+    width: 100%;
+    height: 400px;
+  }
 `
 export const WrapperCircle = styled.div`
   position: absolute;

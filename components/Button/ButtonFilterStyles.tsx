@@ -22,6 +22,12 @@ export const Buttons = styled.div`
   margin: 0 auto;
   overflow: hidden;
   margin: 45px auto;
+  @media screen and (max-width: 640px) {
+    width: 350px;
+  }
+  @media screen and (max-width: 300px) {
+    display: none;
+  }
 `
 
 export const Button = styled.button<ButtonProps>`
@@ -33,6 +39,9 @@ export const Button = styled.button<ButtonProps>`
   font-size: 15px;
   cursor: pointer;
   z-index: 3;
+  @media screen and (max-width: 640px) {
+    font-size: 12px;
+  }
 `
 
 export const ButtonSelected = styled.div<ButtonSelectedProps>`
@@ -54,6 +63,21 @@ export const ButtonSelected = styled.div<ButtonSelectedProps>`
         break
     }
   }};
+  @media screen and (max-width: 640px) {
+    width: 90px;
+    left: ${({ selectedButton }) => {
+      switch (selectedButton) {
+        case 'All':
+          return '5px'
+        case 'Personels':
+          return '130px'
+        case 'Formations':
+          return '255px'
+        default:
+          break
+      }
+    }};
+  }
   box-shadow: rgb(113 116 152 / 10%) 0px 18px 31px,
     rgb(113 116 152 / 7%) 0px 8px 16.2244px,
     rgb(113 116 152 / 5%) 0px 8px 8.46625px;
