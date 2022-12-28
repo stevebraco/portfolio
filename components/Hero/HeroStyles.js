@@ -53,7 +53,7 @@ export const HeroSubTitle = styled.p`
   max-width: 800px;
   color: #bbbac4;
   @media screen and (max-width: 400px) {
-    font-size: 20px;
+    font-size: 15px;
   }
 `
 
